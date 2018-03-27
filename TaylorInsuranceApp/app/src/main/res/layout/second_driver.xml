@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/companylogo" />
+
+        <TextView
+            android:id="@+id/secondDriverClientIDView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView6"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/secondDriverClientIDView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverClientIDView"
+            android:layout_alignStart="@+id/secondDriverClientIDView"
+            android:layout_below="@+id/secondDriverClientIDView"
+            android:layout_marginTop="20dp"
+            android:text="@string/secondDriverNameView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverGenderView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/secondDriverNameView"
+            android:layout_centerHorizontal="true"
+            android:text="@string/secondDriverGenderView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverDOBView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/secondDriverGenderView"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_toEndOf="@+id/secondDriverGenderView"
+            android:layout_toRightOf="@+id/secondDriverGenderView"
+            android:text="@string/secondDriverDOBView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverAddressView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverNameView"
+            android:layout_alignStart="@+id/secondDriverNameView"
+            android:layout_below="@+id/secondDriverNameView"
+            android:layout_marginTop="21dp"
+            android:text="@string/secondDriverAddressView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverCityView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverAddressView"
+            android:layout_alignStart="@+id/secondDriverAddressView"
+            android:layout_centerVertical="true"
+            android:text="@string/secondDriverCityView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverProvinceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverGenderView"
+            android:layout_alignStart="@+id/secondDriverGenderView"
+            android:layout_alignTop="@+id/secondDriverCityView"
+            android:text="@string/secondDriverProvinceView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverPostalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverDOBView"
+            android:layout_alignStart="@+id/secondDriverDOBView"
+            android:layout_alignTop="@+id/secondDriverProvinceView"
+            android:text="@string/secondDriverPostalView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverEmailView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverCityView"
+            android:layout_alignStart="@+id/secondDriverCityView"
+            android:layout_below="@+id/secondDriverCityView"
+            android:layout_marginTop="24dp"
+            android:text="@string/secondDriverEmailView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverPhoneView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/secondDriverEmailView"
+            android:layout_alignBottom="@+id/secondDriverEmailView"
+            android:layout_toEndOf="@+id/secondDriverProvinceView"
+            android:layout_toRightOf="@+id/secondDriverProvinceView"
+            android:text="@string/secondDriverPhoneView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverLicenceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverEmailView"
+            android:layout_alignStart="@+id/secondDriverEmailView"
+            android:layout_below="@+id/secondDriverEmailView"
+            android:layout_marginTop="21dp"
+            android:text="@string/secondDriverLicenseView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverIssueView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/secondDriverLicenceView"
+            android:layout_alignBottom="@+id/secondDriverLicenceView"
+            android:layout_toEndOf="@+id/secondDriverGenderView"
+            android:layout_toRightOf="@+id/secondDriverGenderView"
+            android:text="@string/secondDriverIssueView"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/secondDriverBackBtn"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="46dp"
+            android:text="Back"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

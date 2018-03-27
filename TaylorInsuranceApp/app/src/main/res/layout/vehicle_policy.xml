@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/companylogo" />
+
+        <TextView
+            android:id="@+id/autoPolicyIDLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView8"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/autoPolicyIDLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoPolicyIDView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/autoPolicyIDLbl"
+            android:layout_marginLeft="77dp"
+            android:layout_marginStart="77dp"
+            android:layout_toEndOf="@+id/autoPolicyIDLbl"
+            android:layout_toRightOf="@+id/autoPolicyIDLbl"
+            android:text="@string/autoPolicyIDView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoPolicyDateLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoPolicyIDLbl"
+            android:layout_alignStart="@+id/autoPolicyIDLbl"
+            android:layout_below="@+id/autoPolicyIDLbl"
+            android:layout_marginTop="22dp"
+            android:text="@string/autoPolicyDateLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoPolicyDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoPolicyIDView"
+            android:layout_alignStart="@+id/autoPolicyIDView"
+            android:layout_alignTop="@+id/autoPolicyDateLbl"
+            android:text="@string/autoPolicyDateView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoPolicyExpiryLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoPolicyDateLbl"
+            android:layout_alignStart="@+id/autoPolicyDateLbl"
+            android:layout_below="@+id/autoPolicyDateLbl"
+            android:layout_marginTop="23dp"
+            android:text="@string/autoPolicyExpiryLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoPolicyExpiryView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoPolicyDateView"
+            android:layout_alignStart="@+id/autoPolicyDateView"
+            android:layout_alignTop="@+id/autoPolicyExpiryLbl"
+            android:text="@string/autoPolicyExpiryView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoPolicyPremiumLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoPolicyExpiryLbl"
+            android:layout_alignStart="@+id/autoPolicyExpiryLbl"
+            android:layout_centerVertical="true"
+            android:text="@string/autoPolicyPremiumLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoPolicyPremiumView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoPolicyExpiryView"
+            android:layout_alignStart="@+id/autoPolicyExpiryView"
+            android:layout_alignTop="@+id/autoPolicyPremiumLbl"
+            android:text="@string/autoPolicyPremiumView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoPolicyTaxLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoPolicyPremiumLbl"
+            android:layout_alignStart="@+id/autoPolicyPremiumLbl"
+            android:layout_below="@+id/autoPolicyPremiumLbl"
+            android:layout_marginTop="17dp"
+            android:text="@string/autoPolicyTaxLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoPolicyTaxView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoPolicyPremiumView"
+            android:layout_alignStart="@+id/autoPolicyPremiumView"
+            android:layout_alignTop="@+id/autoPolicyTaxLbl"
+            android:text="@string/autoPolicyTaxView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoPolicyTotalLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoPolicyTaxLbl"
+            android:layout_alignStart="@+id/autoPolicyTaxLbl"
+            android:layout_below="@+id/autoPolicyTaxLbl"
+            android:layout_marginTop="17dp"
+            android:text="@string/autoPolicyTotalLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoPolicyTotalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/autoPolicyTotalLbl"
+            android:layout_alignBottom="@+id/autoPolicyTotalLbl"
+            android:layout_alignLeft="@+id/autoPolicyTaxView"
+            android:layout_alignStart="@+id/autoPolicyTaxView"
+            android:text="@string/autoPolicyTotalView"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/autoPolicyInfoBtn"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_above="@+id/autoPolicySecondBtn"
+            android:layout_alignLeft="@+id/autoPolicySecondBtn"
+            android:layout_alignStart="@+id/autoPolicySecondBtn"
+            android:text="Vehicle Info."
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+        <Button
+            android:id="@+id/autoPolicySecondBtn"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_above="@+id/autoQuoteBackBtn3"
+            android:layout_alignLeft="@+id/autoQuoteBackBtn3"
+            android:layout_alignStart="@+id/autoQuoteBackBtn3"
+            android:text="Second Driver"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+        <Button
+            android:id="@+id/autoQuoteBackBtn3"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11dp"
+            android:text="Back"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/companylogo" />
+
+        <TextView
+            android:id="@+id/homeInfoIDLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/homeInfoIDLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoIDView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/homeInfoYearBuiltLbl"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_toEndOf="@+id/homeInfoDwellingLbl"
+            android:layout_toRightOf="@+id/homeInfoDwellingLbl"
+            android:text="@string/homeInfoIDView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoYearBuiltLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoIDLbl"
+            android:layout_alignStart="@+id/homeInfoIDLbl"
+            android:layout_below="@+id/homeInfoIDLbl"
+            android:layout_marginTop="14dp"
+            android:text="@string/homeInfoYearBuiltLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoYearBuiltView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoIDView"
+            android:layout_alignStart="@+id/homeInfoIDView"
+            android:layout_alignTop="@+id/homeInfoYearBuiltLbl"
+            android:text="@string/homeInfoYearBuiltView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoDwellingLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoYearBuiltLbl"
+            android:layout_alignStart="@+id/homeInfoYearBuiltLbl"
+            android:layout_below="@+id/homeInfoYearBuiltLbl"
+            android:layout_marginTop="15dp"
+            android:text="@string/homeInfoDwellingLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoDwellingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoYearBuiltView"
+            android:layout_alignStart="@+id/homeInfoYearBuiltView"
+            android:layout_alignTop="@+id/homeInfoDwellingLbl"
+            android:text="@string/homeInfoDwellingView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoHeatingLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoDwellingLbl"
+            android:layout_alignStart="@+id/homeInfoDwellingLbl"
+            android:layout_below="@+id/homeInfoDwellingLbl"
+            android:layout_marginTop="16dp"
+            android:text="@string/homeInfoHeatingLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoHeatingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoDwellingView"
+            android:layout_alignStart="@+id/homeInfoDwellingView"
+            android:layout_alignTop="@+id/homeInfoHeatingLbl"
+            android:text="@string/homeInfoHeatingView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoAddressLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoHeatingLbl"
+            android:layout_alignStart="@+id/homeInfoHeatingLbl"
+            android:layout_below="@+id/homeInfoHeatingLbl"
+            android:layout_marginTop="17dp"
+            android:text="@string/homeInfoAddressLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoAddressView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoHeatingView"
+            android:layout_alignStart="@+id/homeInfoHeatingView"
+            android:layout_alignTop="@+id/homeInfoAddressLbl"
+            android:text="@string/homeInfoAddressView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoCityLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoAddressLbl"
+            android:layout_alignStart="@+id/homeInfoAddressLbl"
+            android:layout_below="@+id/homeInfoAddressLbl"
+            android:layout_marginTop="15dp"
+            android:text="@string/homeInfoCityLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoCityView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoAddressView"
+            android:layout_alignStart="@+id/homeInfoAddressView"
+            android:layout_alignTop="@+id/homeInfoCityLbl"
+            android:text="@string/homeInfoCityView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoProvinceLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoCityLbl"
+            android:layout_alignStart="@+id/homeInfoCityLbl"
+            android:layout_below="@+id/homeInfoCityLbl"
+            android:layout_marginTop="17dp"
+            android:text="@string/homeInfoProvinceLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoProvinceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoCityView"
+            android:layout_alignStart="@+id/homeInfoCityView"
+            android:layout_alignTop="@+id/homeInfoProvinceLbl"
+            android:text="@string/homeInfoProvinceView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoPostalLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoProvinceLbl"
+            android:layout_alignStart="@+id/homeInfoProvinceLbl"
+            android:layout_below="@+id/homeInfoProvinceLbl"
+            android:layout_marginTop="18dp"
+            android:text="@string/homeInfoPostalLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeInfoPostalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeInfoProvinceView"
+            android:layout_alignStart="@+id/homeInfoProvinceView"
+            android:layout_alignTop="@+id/homeInfoPostalLbl"
+            android:text="@string/homeInfoPostalView"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/homeInfoBackBtn"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_alignEnd="@+id/homeInfoHeatingView"
+            android:layout_alignRight="@+id/homeInfoHeatingView"
+            android:layout_below="@+id/homeInfoPostalLbl"
+            android:layout_marginTop="19dp"
+            android:text="Back"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
