@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/companylogo" />
+
+        <TextView
+            android:id="@+id/homeQuoteIDLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView4"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/homeQuoteIDLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeQuoteIDView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/homeQuoteDateLbl"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/homeQuotePremiumLbl"
+            android:layout_toRightOf="@+id/homeQuotePremiumLbl"
+            android:text="@string/homeQuoteIDView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeQuoteDateLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeQuoteIDLbl"
+            android:layout_alignStart="@+id/homeQuoteIDLbl"
+            android:layout_below="@+id/homeQuoteIDLbl"
+            android:layout_marginTop="16dp"
+            android:text="@string/homeQuoteDateLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeQuoteDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/homeQuoteExpireLbl"
+            android:layout_alignLeft="@+id/homeQuoteIDView"
+            android:layout_alignStart="@+id/homeQuoteIDView"
+            android:text="@string/homeQuoteDateView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeQuoteExpireLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeQuoteDateLbl"
+            android:layout_alignStart="@+id/homeQuoteDateLbl"
+            android:layout_below="@+id/homeQuoteDateLbl"
+            android:layout_marginTop="17dp"
+            android:text="@string/homeQuoteExpireLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeQuoteExpireView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeQuoteDateView"
+            android:layout_alignStart="@+id/homeQuoteDateView"
+            android:layout_alignTop="@+id/homeQuoteExpireLbl"
+            android:text="@string/homeQuoteExpiryView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeQuotePremiumLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeQuoteExpireLbl"
+            android:layout_alignStart="@+id/homeQuoteExpireLbl"
+            android:layout_below="@+id/homeQuoteExpireLbl"
+            android:layout_marginTop="17dp"
+            android:text="@string/homeQuotePremiumLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeQuotePremiumView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeQuoteExpireView"
+            android:layout_alignStart="@+id/homeQuoteExpireView"
+            android:layout_alignTop="@+id/homeQuotePremiumLbl"
+            android:text="@string/homeQuotePremiumView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeQuoteTaxLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeQuotePremiumLbl"
+            android:layout_alignStart="@+id/homeQuotePremiumLbl"
+            android:layout_below="@+id/homeQuotePremiumLbl"
+            android:layout_marginTop="17dp"
+            android:text="@string/homeQuoteTaxLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeQuoteTaxView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeQuotePremiumView"
+            android:layout_alignStart="@+id/homeQuotePremiumView"
+            android:layout_alignTop="@+id/homeQuoteTaxLbl"
+            android:text="@string/homeQuoteTaxView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeQuoteTotalLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeQuoteTaxLbl"
+            android:layout_alignStart="@+id/homeQuoteTaxLbl"
+            android:layout_below="@+id/homeQuoteTaxLbl"
+            android:layout_marginTop="17dp"
+            android:text="@string/homeQuoteTotalLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homeQuoteTotalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeQuoteTaxView"
+            android:layout_alignStart="@+id/homeQuoteTaxView"
+            android:layout_alignTop="@+id/homeQuoteTotalLbl"
+            android:text="@string/homeQuoteTotalView"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/homeQuoteInfoBtn"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_above="@+id/homeQuoteBackBtn"
+            android:layout_alignLeft="@+id/homeQuoteBackBtn"
+            android:layout_alignStart="@+id/homeQuoteBackBtn"
+            android:text="Home Info."
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+        <Button
+            android:id="@+id/homeQuoteBackBtn"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_alignEnd="@+id/homeQuoteExpireView"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/homeQuoteExpireView"
+            android:layout_marginBottom="30dp"
+            android:text="Back"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/companylogo" />
+
+        <TextView
+            android:id="@+id/autoInfoIDLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView9"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/autoInfoIDLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoInfoIDView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/autoInfoIDLbl"
+            android:layout_marginLeft="66dp"
+            android:layout_marginStart="66dp"
+            android:layout_toEndOf="@+id/autoInfoIDLbl"
+            android:layout_toRightOf="@+id/autoInfoIDLbl"
+            android:text="@string/autoInfoIDView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoInfoMakeLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoInfoIDLbl"
+            android:layout_alignStart="@+id/autoInfoIDLbl"
+            android:layout_below="@+id/autoInfoIDLbl"
+            android:layout_marginTop="19dp"
+            android:text="@string/autoInfoMakeLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoInfoMakeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoInfoIDView"
+            android:layout_alignStart="@+id/autoInfoIDView"
+            android:layout_alignTop="@+id/autoInfoMakeLbl"
+            android:text="@string/autoInfoMakeView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoInfoModelLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoInfoMakeLbl"
+            android:layout_alignStart="@+id/autoInfoMakeLbl"
+            android:layout_below="@+id/autoInfoMakeLbl"
+            android:layout_marginTop="19dp"
+            android:text="@string/autoInfoModelLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoInfoModelView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoInfoMakeView"
+            android:layout_alignStart="@+id/autoInfoMakeView"
+            android:layout_alignTop="@+id/autoInfoModelLbl"
+            android:text="@string/autoInfoModelView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoInfoYearLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoInfoModelLbl"
+            android:layout_alignStart="@+id/autoInfoModelLbl"
+            android:layout_below="@+id/autoInfoModelLbl"
+            android:layout_marginTop="18dp"
+            android:text="@string/autoInfoYearLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoInfoYearView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoInfoModelView"
+            android:layout_alignStart="@+id/autoInfoModelView"
+            android:layout_alignTop="@+id/autoInfoYearLbl"
+            android:text="@string/autoInfoYearView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoInfoPlateLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoInfoYearLbl"
+            android:layout_alignStart="@+id/autoInfoYearLbl"
+            android:layout_below="@+id/autoInfoYearLbl"
+            android:layout_marginTop="18dp"
+            android:text="@string/autoInfoPlateLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoInfoPlateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoInfoYearView"
+            android:layout_alignStart="@+id/autoInfoYearView"
+            android:layout_alignTop="@+id/autoInfoPlateLbl"
+            android:text="@string/autoInfoPlateView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoInfoBookLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoInfoPlateLbl"
+            android:layout_alignStart="@+id/autoInfoPlateLbl"
+            android:layout_below="@+id/autoInfoPlateLbl"
+            android:layout_marginTop="19dp"
+            android:text="@string/autoInfoBookLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/autoInfoBookView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/autoInfoPlateView"
+            android:layout_alignStart="@+id/autoInfoPlateView"
+            android:layout_alignTop="@+id/autoInfoBookLbl"
+            android:text="@string/autoInfoBookView"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/qutoInfoBackBtn"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="49dp"
+            android:text="Back"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

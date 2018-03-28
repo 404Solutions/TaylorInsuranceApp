@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="525dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/companylogo" />
+
+        <TextView
+            android:id="@+id/userInfoClientIDView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="21dp"
+            android:text="@string/userInfoClientIDView"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="95dp" />
+
+        <TextView
+            android:id="@+id/userInfoNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userInfoClientIDView"
+            android:layout_alignStart="@+id/userInfoClientIDView"
+            android:layout_below="@+id/userInfoClientIDView"
+            android:layout_marginTop="17dp"
+            android:text="@string/userInfoNameView"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="134dp" />
+
+        <TextView
+            android:id="@+id/userInfoDOBView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userInfoGenderView"
+            android:layout_alignBottom="@+id/userInfoGenderView"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:text="@string/userInfoDOBView"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="178dp" />
+
+        <TextView
+            android:id="@+id/userInfoAddressView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_alignLeft="@+id/userInfoNameView"
+            android:layout_alignStart="@+id/userInfoNameView"
+            android:layout_below="@+id/userInfoNameView"
+            android:layout_marginTop="23dp"
+            android:text="@string/userInfoAddressView"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="260dp" />
+
+        <TextView
+            android:id="@+id/userInfoCityView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userInfoProvinceView"
+            android:layout_alignBottom="@+id/userInfoProvinceView"
+            android:layout_alignLeft="@+id/userInfoAddressView"
+            android:layout_alignStart="@+id/userInfoAddressView"
+            android:text="@string/userInfoCityView"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="260dp" />
+
+        <TextView
+            android:id="@+id/userInfoProvinceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userInfoGenderView"
+            android:layout_alignStart="@+id/userInfoGenderView"
+            android:layout_centerVertical="true"
+            android:text="@string/userInfoProvinceView"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="301dp" />
+
+        <TextView
+            android:id="@+id/userInfoGenderView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userInfoNameView"
+            android:layout_alignBottom="@+id/userInfoNameView"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_toEndOf="@+id/userInfoClientIDView"
+            android:layout_toRightOf="@+id/userInfoClientIDView"
+            android:text="@string/userInfoGenderView"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="134dp" />
+
+        <TextView
+            android:id="@+id/userInfoPostalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userInfoProvinceView"
+            android:layout_alignBottom="@+id/userInfoProvinceView"
+            android:layout_alignEnd="@+id/userInfoDOBView"
+            android:layout_alignRight="@+id/userInfoDOBView"
+            android:text="@string/userInfoPostalView"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="301dp" />
+
+        <TextView
+            android:id="@+id/userInfoEmailView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userInfoCityView"
+            android:layout_alignStart="@+id/userInfoCityView"
+            android:layout_below="@+id/userInfoCityView"
+            android:layout_marginTop="20dp"
+            android:text="@string/userInfoEmailView"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="220dp" />
+
+        <TextView
+            android:id="@+id/userInfoPhoneView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userInfoEmailView"
+            android:layout_alignBottom="@+id/userInfoEmailView"
+            android:layout_toLeftOf="@+id/userInfoDOBView"
+            android:layout_toStartOf="@+id/userInfoDOBView"
+            android:text="@string/userInfoPhoneView"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="178dp" />
+
+        <TextView
+            android:id="@+id/userInfoLicenseNumView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userInfoEmailView"
+            android:layout_alignStart="@+id/userInfoEmailView"
+            android:layout_below="@+id/userInfoEmailView"
+            android:layout_marginTop="20dp"
+            android:text="@string/userInfoLicenseNumView"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="87dp" />
+
+        <TextView
+            android:id="@+id/userInfoDriverDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userInfoLicenseNumView"
+            android:layout_alignBottom="@+id/userInfoLicenseNumView"
+            android:layout_toEndOf="@+id/userInfoProvinceView"
+            android:layout_toRightOf="@+id/userInfoProvinceView"
+            android:text="@string/userInfoIssueDate"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="341dp" />
+
+        <Button
+            android:id="@+id/userInfoPolicyBtn"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/userInfoLicenseNumView"
+            android:layout_toEndOf="@+id/userInfoNameView"
+            android:layout_toRightOf="@+id/userInfoNameView"
+            android:text="Review Policies"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+        <Button
+            android:id="@+id/userInfoQuoteBtn"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_alignLeft="@+id/userInfoPolicyBtn"
+            android:layout_alignStart="@+id/userInfoPolicyBtn"
+            android:layout_below="@+id/userInfoPolicyBtn"
+            android:text="Review Quotes"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+        <Button
+            android:id="@+id/userInfoSignOutBtn"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_alignLeft="@+id/userInfoQuoteBtn"
+            android:layout_alignStart="@+id/userInfoQuoteBtn"
+            android:layout_below="@+id/userInfoQuoteBtn"
+            android:text="Sign Out"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

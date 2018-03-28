@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/companylogo" />
+
+        <TextView
+            android:id="@+id/homePolicyIDLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView7"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/homePolicyIDLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homePolicyIDView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/homePolicyIDLbl"
+            android:layout_marginLeft="93dp"
+            android:layout_marginStart="93dp"
+            android:layout_toEndOf="@+id/homePolicyIDLbl"
+            android:layout_toRightOf="@+id/homePolicyIDLbl"
+            android:text="@string/homePolicyIDView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homePolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homePolicyIDLbl"
+            android:layout_alignStart="@+id/homePolicyIDLbl"
+            android:layout_below="@+id/homePolicyIDLbl"
+            android:layout_marginTop="21dp"
+            android:text="@string/homePolicyDateLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homePolicyDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homePolicyIDView"
+            android:layout_alignStart="@+id/homePolicyIDView"
+            android:layout_alignTop="@+id/homePolicy"
+            android:text="@string/homePolicyDateView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homePolicyExpiryLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homePolicy"
+            android:layout_alignStart="@+id/homePolicy"
+            android:layout_below="@+id/homePolicy"
+            android:layout_marginTop="24dp"
+            android:text="@string/homePolicyExpiryLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homePolicyExpiryView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homePolicyDateView"
+            android:layout_alignStart="@+id/homePolicyDateView"
+            android:layout_alignTop="@+id/homePolicyExpiryLbl"
+            android:text="@string/homePolicyExpiryView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homePolicyPremiumLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homePolicyExpiryLbl"
+            android:layout_alignStart="@+id/homePolicyExpiryLbl"
+            android:layout_below="@+id/homePolicyExpiryLbl"
+            android:layout_marginTop="25dp"
+            android:text="@string/homePolicyPremiumLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homePolicyPremiumView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homePolicyExpiryView"
+            android:layout_alignStart="@+id/homePolicyExpiryView"
+            android:layout_alignTop="@+id/homePolicyPremiumLbl"
+            android:text="@string/homePolicyPremiumView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homePolicyTaxLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homePolicyPremiumLbl"
+            android:layout_alignStart="@+id/homePolicyPremiumLbl"
+            android:layout_below="@+id/homePolicyPremiumLbl"
+            android:layout_marginTop="23dp"
+            android:text="@string/homePolicyTaxLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homePolicyTaxView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homePolicyPremiumView"
+            android:layout_alignStart="@+id/homePolicyPremiumView"
+            android:layout_alignTop="@+id/homePolicyTaxLbl"
+            android:text="@string/homePolicyTaxView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homePolicyTotalLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homePolicyTaxLbl"
+            android:layout_alignStart="@+id/homePolicyTaxLbl"
+            android:layout_below="@+id/homePolicyTaxLbl"
+            android:layout_marginTop="22dp"
+            android:text="@string/homePolicyTotalLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/homePolicyTotalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homePolicyTaxView"
+            android:layout_alignStart="@+id/homePolicyTaxView"
+            android:layout_alignTop="@+id/homePolicyTotalLbl"
+            android:text="@string/homePolicyTotalView"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/homePolicyInfoBtn3"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_above="@+id/homePolicyBackBtn"
+            android:layout_centerHorizontal="true"
+            android:text="Home Info."
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+        <Button
+            android:id="@+id/homePolicyBackBtn"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_alignLeft="@+id/homePolicyInfoBtn3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/homePolicyInfoBtn3"
+            android:layout_marginBottom="27dp"
+            android:text="Back"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

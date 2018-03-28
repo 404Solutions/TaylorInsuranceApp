@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="84dp">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/companylogo" />
+
+        <Button
+            android:id="@+id/quoteBridgeVehicleBtn"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/imageView10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="63dp"
+            android:text="Auto Quote"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+        <Button
+            android:id="@+id/quoteBridgeHomeBtn"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_alignLeft="@+id/quoteBridgeVehicleBtn"
+            android:layout_alignStart="@+id/quoteBridgeVehicleBtn"
+            android:layout_centerVertical="true"
+            android:text="Home Quote"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+        <Button
+            android:id="@+id/quoteBridgeBackBtn"
+            android:layout_width="208dp"
+            android:layout_height="42dp"
+            android:layout_alignLeft="@+id/quoteBridgeHomeBtn"
+            android:layout_alignStart="@+id/quoteBridgeHomeBtn"
+            android:layout_below="@+id/quoteBridgeHomeBtn"
+            android:layout_marginTop="47dp"
+            android:text="Back"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
