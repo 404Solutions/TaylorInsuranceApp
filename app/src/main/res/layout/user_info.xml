@@ -9,7 +9,7 @@
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="0dp"
-        android:layout_height="525dp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -23,201 +23,279 @@
             app:srcCompat="@drawable/companylogo" />
 
         <TextView
+            android:id="@+id/userInfoLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="@string/userInfoLbl"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userInforClientIDLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userInfoLbl"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="17dp"
+            android:layout_toLeftOf="@+id/userInfoLbl"
+            android:layout_toStartOf="@+id/userInfoLbl"
+            android:text="@string/userInfoClientIDLbl"
+            android:textSize="20sp"
+            tools:text="Client ID:" />
+
+        <TextView
             android:id="@+id/userInfoClientIDView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/imageView"
-            android:layout_alignStart="@+id/imageView"
-            android:layout_below="@+id/imageView"
-            android:layout_marginLeft="28dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="21dp"
+            android:layout_alignBaseline="@+id/userInforClientIDLbl"
+            android:layout_alignBottom="@+id/userInforClientIDLbl"
+            android:layout_alignLeft="@+id/userInfoNameView"
+            android:layout_alignStart="@+id/userInfoNameView"
             android:text="@string/userInfoClientIDView"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="95dp" />
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userInfoNameLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userInforClientIDLbl"
+            android:layout_alignStart="@+id/userInforClientIDLbl"
+            android:layout_below="@+id/userInforClientIDLbl"
+            android:layout_marginTop="11dp"
+            android:text="@string/userInfoNameLbl"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/userInfoNameView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/userInfoClientIDView"
-            android:layout_alignStart="@+id/userInfoClientIDView"
-            android:layout_below="@+id/userInfoClientIDView"
-            android:layout_marginTop="17dp"
+            android:layout_alignBaseline="@+id/userInfoNameLbl"
+            android:layout_alignBottom="@+id/userInfoNameLbl"
+            android:layout_alignLeft="@+id/userInfoDOBLbl"
+            android:layout_alignStart="@+id/userInfoDOBLbl"
             android:text="@string/userInfoNameView"
-            android:textSize="20sp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="134dp" />
+            android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/userInfoDOBView"
+            android:id="@+id/userInfoGenderLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/userInfoGenderView"
-            android:layout_alignBottom="@+id/userInfoGenderView"
-            android:layout_alignEnd="@+id/imageView"
-            android:layout_alignRight="@+id/imageView"
-            android:layout_marginEnd="23dp"
-            android:layout_marginRight="23dp"
-            android:text="@string/userInfoDOBView"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="178dp" />
-
-        <TextView
-            android:id="@+id/userInfoAddressView"
-            android:layout_width="wrap_content"
-            android:layout_height="23dp"
-            android:layout_alignLeft="@+id/userInfoNameView"
-            android:layout_alignStart="@+id/userInfoNameView"
-            android:layout_below="@+id/userInfoNameView"
-            android:layout_marginTop="23dp"
-            android:text="@string/userInfoAddressView"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="260dp" />
-
-        <TextView
-            android:id="@+id/userInfoCityView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/userInfoProvinceView"
-            android:layout_alignBottom="@+id/userInfoProvinceView"
-            android:layout_alignLeft="@+id/userInfoAddressView"
-            android:layout_alignStart="@+id/userInfoAddressView"
-            android:text="@string/userInfoCityView"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="181dp"
-            tools:layout_editor_absoluteY="260dp" />
-
-        <TextView
-            android:id="@+id/userInfoProvinceView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/userInfoGenderView"
-            android:layout_alignStart="@+id/userInfoGenderView"
-            android:layout_centerVertical="true"
-            android:text="@string/userInfoProvinceView"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="301dp" />
+            android:layout_alignLeft="@+id/userInfoNameLbl"
+            android:layout_alignStart="@+id/userInfoNameLbl"
+            android:layout_below="@+id/userInfoNameLbl"
+            android:layout_marginTop="12dp"
+            android:text="@string/userInfoGenderLbl"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/userInfoGenderView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/userInfoNameView"
-            android:layout_alignBottom="@+id/userInfoNameView"
-            android:layout_marginLeft="44dp"
-            android:layout_marginStart="44dp"
-            android:layout_toEndOf="@+id/userInfoClientIDView"
-            android:layout_toRightOf="@+id/userInfoClientIDView"
+            android:layout_alignBaseline="@+id/userInfoGenderLbl"
+            android:layout_alignBottom="@+id/userInfoGenderLbl"
+            android:layout_toEndOf="@+id/userInforClientIDLbl"
+            android:layout_toRightOf="@+id/userInforClientIDLbl"
             android:text="@string/userInfoGenderView"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="181dp"
-            tools:layout_editor_absoluteY="134dp" />
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userInfoDOBLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userInfoGenderView"
+            android:layout_alignBottom="@+id/userInfoGenderView"
+            android:layout_centerHorizontal="true"
+            android:text="@string/userInfoDOBLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userInfoDOBView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userInfoDOBLbl"
+            android:layout_alignBottom="@+id/userInfoDOBLbl"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/userInfoDOBLbl"
+            android:layout_toRightOf="@+id/userInfoDOBLbl"
+            android:text="@string/userInfoDOBView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userInfoAddressLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userInfoGenderLbl"
+            android:layout_alignStart="@+id/userInfoGenderLbl"
+            android:layout_below="@+id/userInfoGenderLbl"
+            android:layout_marginTop="12dp"
+            android:text="@string/userInfoAddressLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userInfoAddressView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userInfoDOBLbl"
+            android:layout_alignStart="@+id/userInfoDOBLbl"
+            android:layout_alignTop="@+id/userInfoAddressLbl"
+            android:text="@string/userInfoAddressView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userInfoCityLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userInfoAddressLbl"
+            android:layout_alignStart="@+id/userInfoAddressLbl"
+            android:layout_below="@+id/userInfoAddressLbl"
+            android:layout_marginTop="11dp"
+            android:text="@string/userInfoCityLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userInfoCityView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userInfoCityLbl"
+            android:layout_alignBottom="@+id/userInfoCityLbl"
+            android:layout_alignLeft="@+id/userInfoAddressView"
+            android:layout_alignStart="@+id/userInfoAddressView"
+            android:text="@string/userInfoCityView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userInfoProvinceLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userInfoCityLbl"
+            android:layout_alignStart="@+id/userInfoCityLbl"
+            android:layout_below="@+id/userInfoCityLbl"
+            android:layout_marginTop="12dp"
+            android:text="@string/userInfoProvinceLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userInfoProvinceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/userInfoProvinceLbl"
+            android:layout_toEndOf="@+id/userInfoGenderView"
+            android:layout_toRightOf="@+id/userInfoGenderView"
+            android:text="@string/userInfoProvinceView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userInfoPostalLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userInfoCityView"
+            android:layout_alignStart="@+id/userInfoCityView"
+            android:layout_alignTop="@+id/userInfoProvinceView"
+            android:text="@string/userInfoPostalLbl"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/userInfoPostalView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/userInfoProvinceView"
-            android:layout_alignBottom="@+id/userInfoProvinceView"
-            android:layout_alignEnd="@+id/userInfoDOBView"
-            android:layout_alignRight="@+id/userInfoDOBView"
+            android:layout_alignBaseline="@+id/userInfoPostalLbl"
+            android:layout_alignBottom="@+id/userInfoPostalLbl"
+            android:layout_alignEnd="@+id/userInfoCityView"
+            android:layout_alignRight="@+id/userInfoCityView"
             android:text="@string/userInfoPostalView"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="181dp"
-            tools:layout_editor_absoluteY="301dp" />
+            android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/userInfoEmailView"
+            android:id="@+id/secondDriverPhoneLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/userInfoCityView"
-            android:layout_alignStart="@+id/userInfoCityView"
-            android:layout_below="@+id/userInfoCityView"
-            android:layout_marginTop="20dp"
-            android:text="@string/userInfoEmailView"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="220dp" />
+            android:layout_alignLeft="@+id/userInfoProvinceLbl"
+            android:layout_alignStart="@+id/userInfoProvinceLbl"
+            android:layout_below="@+id/userInfoProvinceLbl"
+            android:layout_marginTop="12dp"
+            android:text="@string/secondDriverPhoneLbl"
+            android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/userInfoPhoneView"
+            android:id="@+id/secondDriverPhoneView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/userInfoEmailView"
-            android:layout_alignBottom="@+id/userInfoEmailView"
-            android:layout_toLeftOf="@+id/userInfoDOBView"
-            android:layout_toStartOf="@+id/userInfoDOBView"
-            android:text="@string/userInfoPhoneView"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="181dp"
-            tools:layout_editor_absoluteY="178dp" />
+            android:layout_alignLeft="@+id/userInfoPostalLbl"
+            android:layout_alignStart="@+id/userInfoPostalLbl"
+            android:layout_alignTop="@+id/secondDriverPhoneLbl"
+            android:text="@string/secondDriverPhoneView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverEmailLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverPhoneLbl"
+            android:layout_alignStart="@+id/secondDriverPhoneLbl"
+            android:layout_below="@+id/secondDriverPhoneLbl"
+            android:layout_marginTop="11dp"
+            android:text="@string/secondDriverEmailLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverEmailView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/secondDriverEmailLbl"
+            android:layout_alignBottom="@+id/secondDriverEmailLbl"
+            android:layout_toEndOf="@+id/userInfoGenderLbl"
+            android:layout_toRightOf="@+id/userInfoGenderLbl"
+            android:text="@string/secondDriverEmailView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userInfoLicenseNumLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverEmailLbl"
+            android:layout_alignStart="@+id/secondDriverEmailLbl"
+            android:layout_below="@+id/secondDriverEmailLbl"
+            android:layout_marginTop="12dp"
+            android:text="@string/userInfoLicenseNumLbl"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/userInfoLicenseNumView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/userInfoEmailView"
-            android:layout_alignStart="@+id/userInfoEmailView"
-            android:layout_below="@+id/userInfoEmailView"
-            android:layout_marginTop="20dp"
+            android:layout_alignBaseline="@+id/userInfoLicenseNumLbl"
+            android:layout_alignBottom="@+id/userInfoLicenseNumLbl"
+            android:layout_alignLeft="@+id/secondDriverPhoneView"
+            android:layout_alignStart="@+id/secondDriverPhoneView"
             android:text="@string/userInfoLicenseNumView"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="87dp" />
+            android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/userInfoDriverDateView"
+            android:id="@+id/userInfoIssueDateLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/userInfoLicenseNumView"
-            android:layout_alignBottom="@+id/userInfoLicenseNumView"
-            android:layout_toEndOf="@+id/userInfoProvinceView"
-            android:layout_toRightOf="@+id/userInfoProvinceView"
-            android:text="@string/userInfoIssueDate"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="181dp"
-            tools:layout_editor_absoluteY="341dp" />
+            android:layout_alignLeft="@+id/userInfoLicenseNumLbl"
+            android:layout_alignStart="@+id/userInfoLicenseNumLbl"
+            android:layout_below="@+id/userInfoLicenseNumLbl"
+            android:layout_marginTop="11dp"
+            android:text="@string/userInfoIssueDateLbl"
+            android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/userInfoPolicyBtn"
-            android:layout_width="208dp"
-            android:layout_height="42dp"
-            android:layout_below="@+id/userInfoLicenseNumView"
-            android:layout_toEndOf="@+id/userInfoNameView"
-            android:layout_toRightOf="@+id/userInfoNameView"
-            android:text="Review Policies"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="410dp" />
-
-        <Button
-            android:id="@+id/userInfoQuoteBtn"
-            android:layout_width="208dp"
-            android:layout_height="42dp"
-            android:layout_alignLeft="@+id/userInfoPolicyBtn"
-            android:layout_alignStart="@+id/userInfoPolicyBtn"
-            android:layout_below="@+id/userInfoPolicyBtn"
-            android:text="Review Quotes"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="410dp" />
-
-        <Button
-            android:id="@+id/userInfoSignOutBtn"
-            android:layout_width="208dp"
-            android:layout_height="42dp"
-            android:layout_alignLeft="@+id/userInfoQuoteBtn"
-            android:layout_alignStart="@+id/userInfoQuoteBtn"
-            android:layout_below="@+id/userInfoQuoteBtn"
-            android:text="Sign Out"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="410dp" />
+        <TextView
+            android:id="@+id/userInfoIssueDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userInfoIssueDateLbl"
+            android:layout_alignBottom="@+id/userInfoIssueDateLbl"
+            android:layout_alignLeft="@+id/userInfoLicenseNumView"
+            android:layout_alignStart="@+id/userInfoLicenseNumView"
+            android:text="@string/userInfoIssueDateView"
+            android:textSize="20sp" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

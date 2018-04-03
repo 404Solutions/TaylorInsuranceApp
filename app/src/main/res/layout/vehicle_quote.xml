@@ -18,6 +18,17 @@
             app:srcCompat="@drawable/companylogo" />
 
         <TextView
+            android:id="@+id/vehicleQuoteLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="@string/autoQuoteLbl"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/autoQuoteIDLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -26,7 +37,7 @@
             android:layout_below="@+id/imageView5"
             android:layout_marginLeft="21dp"
             android:layout_marginStart="21dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="81dp"
             android:text="@string/autoQuoteIDLbl"
             android:textSize="20sp" />
 
@@ -147,40 +158,5 @@
             android:text="@string/autoQuoteTotalView"
             android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/autoQuoteInfoBtn"
-            android:layout_width="208dp"
-            android:layout_height="42dp"
-            android:layout_above="@+id/autoQuoteSecondBtn"
-            android:layout_alignEnd="@+id/autoQuoteExpiryView"
-            android:layout_alignRight="@+id/autoQuoteExpiryView"
-            android:text="Vehicle Info."
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="410dp" />
-
-        <Button
-            android:id="@+id/autoQuoteSecondBtn"
-            tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="410dp"
-            android:layout_width="208dp"
-            android:layout_height="42dp"
-            android:layout_above="@+id/autoQuoteBackBtn"
-            android:layout_alignLeft="@+id/autoQuoteBackBtn"
-            android:layout_alignStart="@+id/autoQuoteBackBtn"
-            android:text="Second Driver"
-            android:textSize="20dp" />
-
-        <Button
-            android:id="@+id/autoQuoteBackBtn"
-            tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="410dp"
-            android:layout_width="208dp"
-            android:layout_height="42dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="20dp"
-            android:text="Back"
-            android:textSize="20dp" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

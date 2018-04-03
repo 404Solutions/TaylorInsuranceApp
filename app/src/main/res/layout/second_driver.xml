@@ -7,7 +7,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <ImageView
             android:id="@+id/imageView6"
@@ -18,59 +20,140 @@
             app:srcCompat="@drawable/companylogo" />
 
         <TextView
-            android:id="@+id/secondDriverClientIDView"
+            android:id="@+id/secondDriverLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView6"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/secondDriverCityLbl"
+            android:layout_toRightOf="@+id/secondDriverCityLbl"
+            android:text="@string/secondDriverLbl"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/secondDriverIDLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/imageView6"
-            android:layout_marginLeft="21dp"
-            android:layout_marginStart="21dp"
-            android:layout_marginTop="13dp"
-            android:text="@string/secondDriverClientIDView"
+            android:layout_below="@+id/secondDriverLbl"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/secondDriverIDLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverIDView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/secondDriverIDLbl"
+            android:layout_alignBottom="@+id/secondDriverIDLbl"
+            android:layout_marginLeft="57dp"
+            android:layout_marginStart="57dp"
+            android:layout_toEndOf="@+id/secondDriverIDLbl"
+            android:layout_toRightOf="@+id/secondDriverIDLbl"
+            android:text="@string/secondDriverIDView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverNameLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverIDLbl"
+            android:layout_alignStart="@+id/secondDriverIDLbl"
+            android:layout_below="@+id/secondDriverIDLbl"
+            android:layout_marginTop="11dp"
+            android:text="@string/secondDriverNameLbl"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/secondDriverNameView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/secondDriverClientIDView"
-            android:layout_alignStart="@+id/secondDriverClientIDView"
-            android:layout_below="@+id/secondDriverClientIDView"
-            android:layout_marginTop="20dp"
+            android:layout_alignBaseline="@+id/secondDriverNameLbl"
+            android:layout_alignBottom="@+id/secondDriverNameLbl"
+            android:layout_alignLeft="@+id/secondDriverIDView"
+            android:layout_alignStart="@+id/secondDriverIDView"
             android:text="@string/secondDriverNameView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverGenderLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverNameLbl"
+            android:layout_alignStart="@+id/secondDriverNameLbl"
+            android:layout_below="@+id/secondDriverNameLbl"
+            android:layout_marginTop="12dp"
+            android:text="@string/secondDriverGenderLbl"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/secondDriverGenderView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/secondDriverNameView"
-            android:layout_centerHorizontal="true"
+            android:layout_alignBaseline="@+id/secondDriverGenderLbl"
+            android:layout_alignBottom="@+id/secondDriverGenderLbl"
+            android:layout_toEndOf="@+id/secondDriverIDLbl"
+            android:layout_toRightOf="@+id/secondDriverIDLbl"
             android:text="@string/secondDriverGenderView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverDOBLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/secondDriverGenderView"
+            android:layout_alignBottom="@+id/secondDriverGenderView"
+            android:layout_alignLeft="@+id/secondDriverNameView"
+            android:layout_alignStart="@+id/secondDriverNameView"
+            android:text="@string/secondDriverDOBLbl"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/secondDriverDOBView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/secondDriverGenderView"
-            android:layout_marginLeft="36dp"
-            android:layout_marginStart="36dp"
-            android:layout_toEndOf="@+id/secondDriverGenderView"
-            android:layout_toRightOf="@+id/secondDriverGenderView"
+            android:layout_alignTop="@+id/secondDriverDOBLbl"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/secondDriverDOBLbl"
+            android:layout_toRightOf="@+id/secondDriverDOBLbl"
             android:text="@string/secondDriverDOBView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverAddressLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverGenderLbl"
+            android:layout_alignStart="@+id/secondDriverGenderLbl"
+            android:layout_below="@+id/secondDriverGenderLbl"
+            android:layout_marginTop="11dp"
+            android:text="@string/secondDriverAddressLbl"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/secondDriverAddressView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/secondDriverNameView"
-            android:layout_alignStart="@+id/secondDriverNameView"
-            android:layout_below="@+id/secondDriverNameView"
-            android:layout_marginTop="21dp"
+            android:layout_alignLeft="@+id/secondDriverDOBLbl"
+            android:layout_alignStart="@+id/secondDriverDOBLbl"
+            android:layout_alignTop="@+id/secondDriverAddressLbl"
             android:text="@string/secondDriverAddressView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverCityLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverAddressLbl"
+            android:layout_alignStart="@+id/secondDriverAddressLbl"
+            android:layout_below="@+id/secondDriverAddressLbl"
+            android:layout_marginTop="11dp"
+            android:text="@string/secondDriverCityLbl"
             android:textSize="20sp" />
 
         <TextView
@@ -79,85 +162,137 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/secondDriverAddressView"
             android:layout_alignStart="@+id/secondDriverAddressView"
-            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/secondDriverCityLbl"
             android:text="@string/secondDriverCityView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverProvinceLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverCityLbl"
+            android:layout_alignStart="@+id/secondDriverCityLbl"
+            android:layout_below="@+id/secondDriverCityLbl"
+            android:layout_marginTop="11dp"
+            android:text="@string/secondDriverProvinceLbl"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/secondDriverProvinceView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/secondDriverGenderView"
-            android:layout_alignStart="@+id/secondDriverGenderView"
-            android:layout_alignTop="@+id/secondDriverCityView"
+            android:layout_alignTop="@+id/secondDriverProvinceLbl"
+            android:layout_toEndOf="@+id/secondDriverGenderView"
+            android:layout_toRightOf="@+id/secondDriverGenderView"
             android:text="@string/secondDriverProvinceView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverPostalLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/secondDriverProvinceView"
+            android:layout_alignBottom="@+id/secondDriverProvinceView"
+            android:layout_alignLeft="@+id/secondDriverCityView"
+            android:layout_alignStart="@+id/secondDriverCityView"
+            android:text="@string/secondDriverPostalLbl"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/secondDriverPostalView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/secondDriverDOBView"
-            android:layout_alignStart="@+id/secondDriverDOBView"
-            android:layout_alignTop="@+id/secondDriverProvinceView"
+            android:layout_alignBaseline="@+id/secondDriverPostalLbl"
+            android:layout_alignBottom="@+id/secondDriverPostalLbl"
+            android:layout_alignEnd="@+id/secondDriverNameView"
+            android:layout_alignRight="@+id/secondDriverNameView"
             android:text="@string/secondDriverPostalView"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/secondDriverEmailView"
+            android:id="@+id/secondDriverPhoneLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/secondDriverCityView"
-            android:layout_alignStart="@+id/secondDriverCityView"
-            android:layout_below="@+id/secondDriverCityView"
-            android:layout_marginTop="24dp"
-            android:text="@string/secondDriverEmailView"
+            android:layout_alignLeft="@+id/secondDriverProvinceLbl"
+            android:layout_alignStart="@+id/secondDriverProvinceLbl"
+            android:layout_below="@+id/secondDriverProvinceLbl"
+            android:layout_marginTop="11dp"
+            android:text="@string/secondDriverPhoneLbl"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/secondDriverPhoneView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/secondDriverEmailView"
-            android:layout_alignBottom="@+id/secondDriverEmailView"
-            android:layout_toEndOf="@+id/secondDriverProvinceView"
-            android:layout_toRightOf="@+id/secondDriverProvinceView"
+            android:layout_alignBaseline="@+id/secondDriverPhoneLbl"
+            android:layout_alignBottom="@+id/secondDriverPhoneLbl"
+            android:layout_alignLeft="@+id/secondDriverPostalLbl"
+            android:layout_alignStart="@+id/secondDriverPostalLbl"
             android:text="@string/secondDriverPhoneView"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/secondDriverLicenceView"
+            android:id="@+id/secondDriverEmailLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/secondDriverEmailView"
-            android:layout_alignStart="@+id/secondDriverEmailView"
-            android:layout_below="@+id/secondDriverEmailView"
-            android:layout_marginTop="21dp"
-            android:text="@string/secondDriverLicenseView"
+            android:layout_alignLeft="@+id/secondDriverPhoneLbl"
+            android:layout_alignStart="@+id/secondDriverPhoneLbl"
+            android:layout_below="@+id/secondDriverPhoneLbl"
+            android:layout_marginTop="11dp"
+            android:text="@string/secondDriverEmailLbl"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/secondDriverIssueView"
+            android:id="@+id/secondDriverEmailView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/secondDriverLicenceView"
-            android:layout_alignBottom="@+id/secondDriverLicenceView"
-            android:layout_toEndOf="@+id/secondDriverGenderView"
-            android:layout_toRightOf="@+id/secondDriverGenderView"
-            android:text="@string/secondDriverIssueView"
+            android:layout_alignBaseline="@+id/secondDriverEmailLbl"
+            android:layout_alignBottom="@+id/secondDriverEmailLbl"
+            android:layout_toEndOf="@+id/secondDriverPhoneLbl"
+            android:layout_toRightOf="@+id/secondDriverPhoneLbl"
+            android:text="@string/secondDriverEmailView"
             android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/secondDriverBackBtn"
-            tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="410dp"
-            android:layout_width="208dp"
-            android:layout_height="42dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="46dp"
-            android:text="Back"
-            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/secondDriverLicenseNumLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverEmailLbl"
+            android:layout_alignStart="@+id/secondDriverEmailLbl"
+            android:layout_below="@+id/secondDriverEmailLbl"
+            android:layout_marginTop="12dp"
+            android:text="@string/secondDriverLicenseNumLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverLicenseNumView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverPhoneView"
+            android:layout_alignStart="@+id/secondDriverPhoneView"
+            android:layout_alignTop="@+id/secondDriverLicenseNumLbl"
+            android:text="@string/secondDriverLicenseNumView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverIssueDateLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverLicenseNumLbl"
+            android:layout_alignStart="@+id/secondDriverLicenseNumLbl"
+            android:layout_below="@+id/secondDriverLicenseNumLbl"
+            android:text="@string/secondDriverIssueDateLbl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/secondDriverIssueDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/secondDriverLicenseNumView"
+            android:layout_alignStart="@+id/secondDriverLicenseNumView"
+            android:layout_alignTop="@+id/secondDriverIssueDateLbl"
+            android:text="@string/secondDriverIssueDateView"
+            android:textSize="20sp" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

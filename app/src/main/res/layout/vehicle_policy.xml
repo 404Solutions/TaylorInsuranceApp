@@ -3,11 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/relativeLayout7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView8"
@@ -18,15 +24,28 @@
             app:srcCompat="@drawable/companylogo" />
 
         <TextView
+            android:id="@+id/vehiclePolicyLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="@string/autoPolicyLbl"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="112dp" />
+
+        <TextView
             android:id="@+id/autoPolicyIDLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/imageView8"
-            android:layout_marginLeft="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="16dp"
+            android:layout_below="@+id/vehiclePolicyLbl"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="35dp"
+            android:layout_toLeftOf="@+id/vehiclePolicyLbl"
+            android:layout_toStartOf="@+id/vehiclePolicyLbl"
             android:text="@string/autoPolicyIDLbl"
             android:textSize="20sp" />
 
@@ -46,10 +65,10 @@
             android:id="@+id/autoPolicyDateLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/autoPolicyIDLbl"
-            android:layout_alignStart="@+id/autoPolicyIDLbl"
-            android:layout_below="@+id/autoPolicyIDLbl"
-            android:layout_marginTop="22dp"
+            android:layout_alignLeft="@+id/autoPolicyTaxLbl"
+            android:layout_alignStart="@+id/autoPolicyTaxLbl"
+            android:layout_below="@+id/autoPolicyTaxLbl"
+            android:layout_marginTop="17dp"
             android:text="@string/autoPolicyDateLbl"
             android:textSize="20sp" />
 
@@ -70,7 +89,7 @@
             android:layout_alignLeft="@+id/autoPolicyDateLbl"
             android:layout_alignStart="@+id/autoPolicyDateLbl"
             android:layout_below="@+id/autoPolicyDateLbl"
-            android:layout_marginTop="23dp"
+            android:layout_marginTop="14dp"
             android:text="@string/autoPolicyExpiryLbl"
             android:textSize="20sp" />
 
@@ -88,9 +107,10 @@
             android:id="@+id/autoPolicyPremiumLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/autoPolicyExpiryLbl"
-            android:layout_alignStart="@+id/autoPolicyExpiryLbl"
-            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/autoPolicyIDLbl"
+            android:layout_alignStart="@+id/autoPolicyIDLbl"
+            android:layout_below="@+id/autoPolicyIDLbl"
+            android:layout_marginTop="15dp"
             android:text="@string/autoPolicyPremiumLbl"
             android:textSize="20sp" />
 
@@ -111,7 +131,7 @@
             android:layout_alignLeft="@+id/autoPolicyPremiumLbl"
             android:layout_alignStart="@+id/autoPolicyPremiumLbl"
             android:layout_below="@+id/autoPolicyPremiumLbl"
-            android:layout_marginTop="17dp"
+            android:layout_marginTop="20dp"
             android:text="@string/autoPolicyTaxLbl"
             android:textSize="20sp" />
 
@@ -129,10 +149,10 @@
             android:id="@+id/autoPolicyTotalLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/autoPolicyTaxLbl"
-            android:layout_alignStart="@+id/autoPolicyTaxLbl"
-            android:layout_below="@+id/autoPolicyTaxLbl"
-            android:layout_marginTop="17dp"
+            android:layout_alignLeft="@+id/autoPolicyExpiryLbl"
+            android:layout_alignStart="@+id/autoPolicyExpiryLbl"
+            android:layout_below="@+id/autoPolicyExpiryLbl"
+            android:layout_marginTop="20dp"
             android:text="@string/autoPolicyTotalLbl"
             android:textSize="20sp" />
 
@@ -147,41 +167,6 @@
             android:text="@string/autoPolicyTotalView"
             android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/autoPolicyInfoBtn"
-            android:layout_width="208dp"
-            android:layout_height="42dp"
-            android:layout_above="@+id/autoPolicySecondBtn"
-            android:layout_alignLeft="@+id/autoPolicySecondBtn"
-            android:layout_alignStart="@+id/autoPolicySecondBtn"
-            android:text="Vehicle Info."
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="410dp" />
-
-        <Button
-            android:id="@+id/autoPolicySecondBtn"
-            android:layout_width="208dp"
-            android:layout_height="42dp"
-            android:layout_above="@+id/autoQuoteBackBtn3"
-            android:layout_alignLeft="@+id/autoQuoteBackBtn3"
-            android:layout_alignStart="@+id/autoQuoteBackBtn3"
-            android:text="Second Driver"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="410dp" />
-
-        <Button
-            android:id="@+id/autoQuoteBackBtn3"
-            android:layout_width="208dp"
-            android:layout_height="42dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="11dp"
-            android:text="Back"
-            android:textSize="20dp"
-            tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="410dp" />
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home_info"
+        android:title="Home Information" />
+    <item android:id="@+id/home_quote"
+        android:title="Home Quote" />
+    <item android:id="@+id/home_policy"
+        android:title="Home Policy" />
+    <item android:id="@+id/vehicle_info"
+        android:title="Vehicle Information" />
+    <item android:id="@+id/vehicle_quote"
+        android:title="Vehicle Quote" />
+    <item android:id="@+id/vehicle_policy"
+        android:title="Vehicle Policy" />
+    <item android:id="@+id/secondary_driver"
+        android:title="Secondary Driver" />
+    <item android:id="@+id/user_info"
+        android:title="User Information" />
+    <item android:id="@+id/contact_us"
+        android:title="Contact Us" />
+    <item android:id="@+id/sign_out"
+        android:title="Sign Out" />
+
+</menu>
